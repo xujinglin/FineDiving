@@ -15,7 +15,7 @@ We construct a fine-grained video dataset organized by both semantic and tempora
 ### Annotation
 Given a raw diving video, the annotator utilizes our defined lexicon to label each action and its procedure. We accomplish two annotation stages from coarse- to fine-grained. The coarse stage is to label the action type for each action instance and its temporal boundary accompanied with the official score. The fine-grained stage is to label the sub-action type for each step in the action procedure and record the starting frame of each step.
 
-The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](FineDiving_coarse_annotation.pkl) and [`FineDiving_fine-grained_annotation.pkl`](FineDiving_fine-grained_annotation.pkl).
+The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Annotations/FineDiving_coarse_annotation.pkl) and [`FineDiving_fine-grained_annotation.pkl`](Annotations/FineDiving_fine-grained_annotation.pkl).
 
 | Field Name          | Type                         | Example          | Description                                                                                                           |
 | ------------------- | ---------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
