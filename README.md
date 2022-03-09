@@ -15,6 +15,24 @@ We construct a fine-grained video dataset organized by both semantic and tempora
 ### Annotation
 Given a raw diving video, the annotator utilizes our defined lexicon to label each action and its procedure. We accomplish two annotation stages from coarse- to fine-grained. The coarse stage is to label the action type for each action instance and its temporal boundary accompanied with the official score. The fine-grained stage is to label the sub-action type for each step in the action procedure and record the starting frame of each step.
 
+The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](FineDiving_coarse_annotation.pkl) and [`FineDiving_fine-grained_annotation.pkl`](FineDiving_fine-grained_annotation.pkl).
+
+| Field Name          | Type                         | Example          | Description                                                                                                           |
+| ------------------- | ---------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
+| `database`          | string                          | -             | Key filed of the annotation file.                                                                                             |
+| -                   | string                       | `LtRSn-ntcLY`         | Youtube ID of the video.                                                                                              |
+| `duration`          | float                        | 56.640895694775196   | Duration of the video in seconds.                                                        |
+| `class`             | string                       | `ReplaceCDDriveWithSSD`   | Name of the task in the video.                                                                           |
+| `video_url`    | string                       | `https://www.youtube.com/embed/LtRSn-ntcLY`   | Url of the video.                                                                             |
+| `start`       | float                          | 56.640895694775196          | Start time of the ROI of the video. |
+| `end`        | float                          | 85.714362947023          | End time of the ROI of the video.  |
+| `subset`    | string                       | `training` or `validation`           | Subset of the video.                                                                                                |
+| `recipe_type`              | int                       | 131          | ID number of the task.                                                                                       |
+| `annotation`              | string                       | -        | Annotation information of the video.                                                                                 |
+| `annotation`:`id`        | int                          | 212              | ID number of the procedure.                                                                                |
+| `annotation`:`label`       | string                          | `take out the laptop CD drive`             | Name of the procedure.                                                                                |
+| `annotation`:`segment`         | list of float (len=2)   | `[60.0,69.0]`     | Start and end time of the procedure.                                                                          |
+
 ### Statistics
 The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 29 sub-action types, and 23 difficulty degree types.
 
