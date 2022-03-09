@@ -19,7 +19,7 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 
 | Field Name          | Type                         | Example          | Description                                                                                                           |
 | ------------------- | ---------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `database`          | string                          | -             | Key filed of the annotation file.                                                                                             |
+| `action_type`          | string                          | 5255B             | Back 2½ Somersaults 2½ Twists                                                                                             |
 | -                   | string                       | `LtRSn-ntcLY`         | Youtube ID of the video.                                                                                              |
 | `duration`          | float                        | 56.640895694775196   | Duration of the video in seconds.                                                        |
 | `class`             | string                       | `ReplaceCDDriveWithSSD`   | Name of the task in the video.                                                                           |
