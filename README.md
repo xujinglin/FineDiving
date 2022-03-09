@@ -25,8 +25,8 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 | `difficulty`             | float                    | Difficulty of the action type.                                                                           |
 | `start_frame`       | int                         | Start frame of the action instance. |
 | `end_frame`        | int                         | End frame of the action instance.  |
-| `judge_scores`    | list of float | Judge scores.                                                                                                |
-| `steps_transit_frames`    | array of float      | Frame index of step transitions.                                                                             |
+| `judge_scores`    | list | Judge scores.                                                                                                |
+| `steps_transit_frames`    | array     | Frame index of step transitions.                                                                             |
 | `frames_labels`              | array             | Step-level labels of the frames.                                                                                       |
 | `sub-action_types`              | dict           | Description of the sub-action type.                                                                                 |
 
