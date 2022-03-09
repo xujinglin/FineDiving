@@ -24,3 +24,55 @@ The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 
 
 We have made the full dataset available on [[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) (extract number: 0624) and Google Dirve.
 
+## Code
+### Requirement
+- Python 3.7.9
+- Pytorch 1.7.1
+- torchvision 0.8.2
+- timm 0.3.4
+- torch_videovision
+```
+pip install git+https://github.com/hassony2/torch_videovision
+```
+
+### The FineDiving Dataset
+- The data structure should be:
+```
+$DATASET_ROOT
+├── FineDiving
+|  ├── FINADivingWorldCup2021_Men3m_final_r1
+|     ├── 0
+|        ├── 00489.jpg
+|        ...
+|        └── 00592.jpg
+|     ...
+|     └── 11
+|        ├── 14425.jpg
+|        ...
+|        └── 14542.jpg
+|  ...
+|  └── FullMenSynchronised10mPlatform_Tokyo2020Replays_2
+|     ├── 0
+|     ...
+|     └── 16
+|        
+├── data_annotations_dict.pkl
+├── train_split.pkl
+└── test_split.pkl
+```
+
+### Pretrain Model
+The Kinetics pretrained I3D downloaded from the reposity [kinetics_i3d_pytorch](https://github.com/hassony2/kinetics_i3d_pytorch/blob/master/model/model_rgb.pth)
+```
+model_rgb.pth
+```
+
+### Experimental Setting
+```
+FineDiving_TSA.yaml
+```
+
+### Training and Testing
+```
+bash train_test.sh TSA FineDiving 0,1
+```
