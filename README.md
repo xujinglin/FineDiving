@@ -20,7 +20,7 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 | Field Name          | Type                         | Example          | Description                                                                                                           |
 | ------------------- | ---------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `action_type`          | string                          | 5255B             | Back 2½ Somersaults 2½ Twists                                                                                             |
-| (x, y)                  | string                       | ('FullMenSynchronised10mPlatform_Tokyo2020Replays_3', 11)         | ID of the instance.                                                                                              |
+| `(x, y)`                  | string                       | ('FullMenSynchronised10mPlatform_Tokyo2020Replays_3',11)         | ID of the instance.                                                                                              |
 | `dive_score`          | float                        | 101.52   | Diving score of the action instance.                                                        |
 | `difficulty`             | float                       | 3.6   | Difficulty of the action type.                                                                           |
 | `start_frame`       | int                          | 23650          | Start frame of the action instance. |
