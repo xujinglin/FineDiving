@@ -1,6 +1,6 @@
 # FineDiving: A Fine-grained Dataset for Procedure-aware Action Quality Assessment
 
-This repository contains FineDiving dataset and PyTorch implementation for Temporal Segmentation Attention (TSA). (CVPR 2022)
+This repository contains the FineDiving dataset and PyTorch implementation for Temporal Segmentation Attention. (CVPR 2022)
 
 [[Project Page]](Coming soon) [[arXiv]](Coming soon) [[Dataset]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg)
 
