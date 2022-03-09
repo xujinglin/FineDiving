@@ -10,3 +10,4 @@ We construct a fine-grained video dataset organized by both semantic and tempora
 
 - In temporal structure, the action-level labels locate the temporal boundary of a complete action instance performed by an athlete. During this annotation process, we discard all the incomplete action instances and filter out the slow playbacks. The step-level labels are the starting frames of consecutive steps in the action procedure.
 
+We have made the full dataset available on Baidu Drive (extract number: 0624) and Google Dirve.
