@@ -60,7 +60,7 @@ $DATASET_ROOT
 |     ...
 |     └── 16
 |        
-├── data_annotations_dict.pkl
+├── fine-grained_annotation_for_aqa.pkl
 ├── train_split.pkl
 └── test_split.pkl
 ```
