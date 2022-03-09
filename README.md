@@ -20,18 +20,15 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 | Field Name          | Type                         | Example          | Description                                                                                                           |
 | ------------------- | ---------------------------- | ---------------- | --------------------------------------------------------------------------------------------------------------------- |
 | `action_type`          | string                          | 5255B             | Back 2½ Somersaults 2½ Twists                                                                                             |
-| -                   | string                       | `LtRSn-ntcLY`         | Youtube ID of the video.                                                                                              |
-| `duration`          | float                        | 56.640895694775196   | Duration of the video in seconds.                                                        |
-| `class`             | string                       | `ReplaceCDDriveWithSSD`   | Name of the task in the video.                                                                           |
-| `video_url`    | string                       | `https://www.youtube.com/embed/LtRSn-ntcLY`   | Url of the video.                                                                             |
-| `start`       | float                          | 56.640895694775196          | Start time of the ROI of the video. |
-| `end`        | float                          | 85.714362947023          | End time of the ROI of the video.  |
-| `subset`    | string                       | `training` or `validation`           | Subset of the video.                                                                                                |
-| `recipe_type`              | int                       | 131          | ID number of the task.                                                                                       |
-| `annotation`              | string                       | -        | Annotation information of the video.                                                                                 |
-| `annotation`:`id`        | int                          | 212              | ID number of the procedure.                                                                                |
-| `annotation`:`label`       | string                          | `take out the laptop CD drive`             | Name of the procedure.                                                                                |
-| `annotation`:`segment`         | list of float (len=2)   | `[60.0,69.0]`     | Start and end time of the procedure.                                                                          |
+| (x, y)                  | string                       | ('FullMenSynchronised10mPlatform_Tokyo2020Replays_3', 11)         | ID of the instance.                                                                                              |
+| `dive_score`          | float                        | 101.52   | Diving score of the action instance.                                                        |
+| `difficulty`             | float                       | 3.6   | Difficulty of the action type.                                                                           |
+| `start_frame`       | int                          | 23650          | Start frame of the action instance. |
+| `end_frame`        | int                          | 23754          | End frame of the action instance.  |
+| `judge_scores`    | list of float (len>=3)  | [9.0, 9.5, 9.5, 9.5, 9.5]           | Judge scores.                                                                                                |
+| `steps_transit_frames`    | array of float                       | array([31, 52, 73])   | Frame index of step transitions.                                                                             |
+| `frames_labels`              | array                       | -          | Step-level labels of the frames.                                                                                       |
+| `sub-action_types`              | dict                       | -        | Semantic of sub-action type.                                                                                 |
 
 ### Statistics
 The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 29 sub-action types, and 23 difficulty degree types.
