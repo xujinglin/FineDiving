@@ -27,8 +27,8 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 | `end_frame`        | int                          | 23754          | End frame of the action instance.  |
 | `judge_scores`    | list of float (len>=3)  | [9.0, 9.5, 9.5, 9.5, 9.5]           | Judge scores.                                                                                                |
 | `steps_transit_frames`    | array of float                       | array([31, 52, 73])   | Frame index of step transitions.                                                                             |
-| `frames_labels`              | array                       | -          | Step-level labels of the frames.                                                                                       |
-| `sub-action_types`              | dict                       | -        | Semantic of sub-action type.                                                                                 |
+| `frames_labels`              | array                       | array([2,2,...,33,...,15,...,36])          | Step-level labels of the frames.                                                                                       |
+| `sub-action_types`              | dict                       | {2:'Back', 33:'2.5 Twists', 15:'2.5 Soms.Pike', 36:'Entry'}        | Semantic of sub-action type.                                                                                 |
 
 ### Statistics
 The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 29 sub-action types, and 23 difficulty degree types.
