@@ -4,8 +4,6 @@ This repository contains the FineDiving dataset and PyTorch implementation for T
 
 [[Project Page]](Coming soon) [[arXiv]](Coming soon) [[Dataset]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg)
 
-**Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
-
 ## Dataset
 
 ### Lexicon
@@ -80,3 +78,5 @@ FineDiving_TSA.yaml
 ```
 bash train_test.sh TSA FineDiving 0,1
 ```
+
+**Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
