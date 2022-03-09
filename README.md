@@ -37,7 +37,7 @@ We have made the full dataset available on [[Baidu Drive]](https://pan.baidu.com
 pip install git+https://github.com/hassony2/torch_videovision
 ```
 
-### The FineDiving Dataset
+### The FineDiving Dataset for AQA
 - The data structure should be:
 ```
 $DATASET_ROOT
