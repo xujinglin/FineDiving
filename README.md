@@ -18,7 +18,8 @@ The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 
 
 ### Download
 - Untrimmed_Videos: Diving competition videos in Olympics, World Cup, World Championships, and European Aquatics Championships.
-- Trimmed_Video_Frames: Trimmed video frames extracted from untrimmed videos by ```video2frame.py''' and can be directly used for AQA.
-- 
+- Trimmed_Video_Frames: Trimmed video frames extracted from untrimmed videos and can be directly used for AQA.
+- Annotations: Coarse- and fine-grained annotations including the action-level labels for untrimmed videos and the step-level labels for action instances.
+- Train/Test Split: 75 percent of samples are for training and 25 percent are for testing.
 We have made the full dataset available on Baidu Drive (extract number: 0624) and Google Dirve.
 
