@@ -19,8 +19,8 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 
 | Field Name          | Type         | Description                                                                                                           |
 | ------------------- | ----------------------------| --------------------------------------------------------------------------------------------------------------------- |
-| `action_type`          | string                     | Back 2½ Somersaults 2½ Twists                                                                                             |
-| `(x, y)`                  | string                  |  Instance ID.                                                                                              |
+| `action_type`          | string                     | Description of the action type.                                                                                              |
+| `(x, y)`                  | string                  | Instance ID.                                                                                              |
 | `dive_score`          | float                       | Diving score of the action instance.                                                        |
 | `difficulty`             | float                    | Difficulty of the action type.                                                                           |
 | `start_frame`       | int                         | Start frame of the action instance. |
@@ -28,7 +28,7 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 | `judge_scores`    | list of float | Judge scores.                                                                                                |
 | `steps_transit_frames`    | array of float      | Frame index of step transitions.                                                                             |
 | `frames_labels`              | array             | Step-level labels of the frames.                                                                                       |
-| `sub-action_types`              | dict           | Semantic of sub-action type.                                                                                 |
+| `sub-action_types`              | dict           | Description of the sub-action type.                                                                                 |
 
 ### Statistics
 The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 29 sub-action types, and 23 difficulty degree types.
