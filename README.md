@@ -2,6 +2,8 @@
 
 This repository contains FineDiving dataset and PyTorch implementation for Temporal Segmentation Attention (TSA). (CVPR 2022)
 
+[[Project Page]](Coming soon) [[arXiv]](Coming soon)
+
 ## Dataset
 
 ### Lexicon
