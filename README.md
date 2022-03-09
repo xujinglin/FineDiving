@@ -26,7 +26,7 @@ The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 
 - Annotations: Coarse- and fine-grained annotations including the action-level labels for untrimmed videos and the step-level labels for action instances.
 - Train/Test Split: 75 percent of samples are for training and 25 percent are for testing.
 
-We have made the full dataset available on [[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) (extract number: 0624) and Google Dirve.
+We have made the full dataset available on [[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) (extract number: 0624).
 
 ## Code
 ### Requirement
