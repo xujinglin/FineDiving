@@ -16,4 +16,9 @@ Given a raw diving video, the annotator utilizes our defined lexicon to label ea
 ### Statistics
 The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 29 sub-action types, and 23 difficulty degree types.
 
+### Download
+- Untrimmed_Videos: Diving competition videos in Olympics, World Cup, World Championships, and European Aquatics Championships.
+- Trimmed_Video_Frames: Trimmed video frames extracted from untrimmed videos by ``video2frame.py'' and can be directly used for AQA.
+- 
 We have made the full dataset available on Baidu Drive (extract number: 0624) and Google Dirve.
+
