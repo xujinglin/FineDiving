@@ -71,11 +71,8 @@ $DATASET_ROOT
 |  └── FullMenSynchronised10mPlatform_Tokyo2020Replays_2
 |     ├── 0
 |     ...
-|     └── 16
-|        
-├── fine-grained_annotation_for_aqa.pkl
-├── train_split.pkl
-└── test_split.pkl
+|     └── 16 
+└──
 ```
 
 ### Pretrain Model
