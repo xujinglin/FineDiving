@@ -86,9 +86,13 @@ model_rgb.pth
 FineDiving_TSA.yaml
 ```
 
-### Training and Testing
+### Training and Evaluation
 ```
-bash train_test.sh TSA FineDiving 0,1
+# train a model on FineDiving
+bash train.sh TSA FineDiving 0,1
+
+# test a model on FineDiving
+bash test.sh TSA FineDiving 0,1
 ```
 
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
