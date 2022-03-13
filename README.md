@@ -17,18 +17,13 @@ Given a raw diving video, the annotator utilizes our defined lexicon to label ea
 
 The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Annotations/FineDiving_coarse_annotation.pkl) and [`FineDiving_fine-grained_annotation.pkl`](Annotations/FineDiving_fine-grained_annotation.pkl).
 
-| Field Name          | Type         | Description                                                                                                           |
+| Field Name          | Type         | Description                     | Field Name          | Type         | Description            |
 | ------------------- | ----------------------------| --------------------------------------------------------------------------------------------------------------------- |
-| `action_type`          | string                     | Description of the action type.                                                                                              |
-| `(x, y)`                  | string                  | Instance ID.                                                                                              |
-| `dive_score`          | float                       | Diving score of the action instance.                                                        |
-| `difficulty`             | float                    | Difficulty of the action type.                                                                           |
-| `start_frame`       | int                         | Start frame of the action instance. |
-| `end_frame`        | int                         | End frame of the action instance.  |
-| `judge_scores`    | list | Judge scores.                                                                                                |
-| `steps_transit_frames`    | array     | Frame index of step transitions.                                                                             |
-| `frames_labels`              | array             | Step-level labels of the frames.                                                                                       |
-| `sub-action_types`              | dict           | Description of the sub-action type.                                                                                 |
+| `action_type`          | string                     | Description of the action type.  | `sub-action_types`         | dict       | Description of the sub-action type. |
+| `(x, y)`                  | string                  | Instance ID.                      | `judge_scores`    | list | Judge scores.  |
+| `dive_score`          | float                       | Diving score of the action instance.  | `frames_labels`              | array    | Step-level labels of the frames.|
+| `difficulty`             | float                    | Difficulty of the action type.   | `steps_transit_frames`    | array     | Frame index of step transitions.  |
+| `start_frame`       | int                         | Start frame of the action instance. | `end_frame`        | int             | End frame of the action instance.|  
 
 ### Statistics
 The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 29 sub-action types, and 23 difficulty degree types.
