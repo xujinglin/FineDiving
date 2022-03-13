@@ -91,8 +91,11 @@ FineDiving_TSA.yaml
 # train a model on FineDiving
 bash train.sh TSA FineDiving 0,1
 
+# resume the training process
+bash train.sh TSA FineDiving 0,1 --resume
+
 # test a model on FineDiving
-bash test.sh TSA FineDiving 0,1
+bash test.sh TSA FineDiving 0,1 --test
 ```
 
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
