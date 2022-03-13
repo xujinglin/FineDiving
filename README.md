@@ -18,7 +18,7 @@ Given a raw diving video, the annotator utilizes our defined lexicon to label ea
 The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Annotations/FineDiving_coarse_annotation.pkl) and [`FineDiving_fine-grained_annotation.pkl`](Annotations/FineDiving_fine-grained_annotation.pkl).
 
 | Field Name          | Type         | Description                     | Field Name          | Type         | Description            |
-| ------------------- | ----------------------------| --------------------------------------------------------------------------------------------------------------------- |
+| ------------------- | ----------------------------| -----------------------| ----------------------------|-----------------------------|-------------- |
 | `action_type`          | string                     | Description of the action type.  | `sub-action_types`         | dict       | Description of the sub-action type. |
 | `(x, y)`                  | string                  | Instance ID.                      | `judge_scores`    | list | Judge scores.  |
 | `dive_score`          | float                       | Diving score of the action instance.  | `frames_labels`              | array    | Step-level labels of the frames.|
