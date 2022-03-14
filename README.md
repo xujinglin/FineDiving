@@ -1,4 +1,5 @@
 # FineDiving: A Fine-grained Dataset for Procedure-aware Action Quality Assessment
+Created by [Jinglin Xu*](https://scholar.google.com/citations?user=SVFP5XEAAAAJ&hl=zh-CN), [Yongming Rao*](https://raoyongming.github.io/), [Xumin Yu](https://yuxumin.github.io/), [Guangyi Chen](https://chengy12.github.io/), Jie Zhou, [Jiwen Lu](https://scholar.google.com/citations?user=TN8uDQoAAAAJ&hl=zh-CN)
 
 This repository contains the FineDiving dataset and PyTorch implementation for Temporal Segmentation Attention. (CVPR 2022)
 
