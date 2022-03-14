@@ -79,6 +79,13 @@ model_rgb.pth
 ### Experimental Setting
 ```
 FineDiving_TSA.yaml
+# frame_length : 96             # the number of frames for each video
+# voter_number : 10             # the number of exemplars in inference
+# fix_size : 5                  # the number of frames in each step
+# step_num : 3                  # the number of step transitions in each action
+# prob_tas_threshold : 0.25     # the ratio of iteration
+# random_choosing : False       # whether selecting exemplars randomly
+# action_number_choosing: True  # whether selecting exemplars based on action types
 ```
 
 ### Training and Evaluation
