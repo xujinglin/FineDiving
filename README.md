@@ -2,7 +2,7 @@
 
 This repository contains the FineDiving dataset and PyTorch implementation for Temporal Segmentation Attention. (CVPR 2022)
 
-[[Project Page]](Coming soon) [[arXiv]](Coming soon) [[Dataset]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg)
+[[Project Page]](https://sites.google.com/view/finediving) [[arXiv]](Coming soon) [[Dataset]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg)
 
 ## Dataset
 
