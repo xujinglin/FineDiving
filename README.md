@@ -84,8 +84,8 @@ FineDiving_TSA.yaml
 # fix_size : 5                  # the number of frames in each step
 # step_num : 3                  # the number of step transitions in each action
 # prob_tas_threshold : 0.25     # the ratio of iteration
-# random_choosing : False       # whether selecting exemplars randomly
-# action_number_choosing: True  # whether selecting exemplars based on action types
+# random_choosing : False       # whether selecting exemplars randomly or not
+# action_number_choosing: True  # whether selecting exemplars based on action types or not
 ```
 
 ### Training and Evaluation
