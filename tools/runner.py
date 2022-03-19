@@ -194,8 +194,6 @@ def validate(base_model, psnet_model, decoder, regressor_delta, test_dataloader,
                                    rho_best, L2_min, RL2_min, 'last', args)
         print('[TEST] EPOCH: %d, correlation: %.6f, L2: %.6f, RL2: %.6f' % (epoch, rho, L2, RL2))
 
-##############################################################################################################
-
 def test_net(args):
     print('Tester start ... ')
 
