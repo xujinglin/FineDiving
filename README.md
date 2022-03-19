@@ -97,8 +97,9 @@ bash train.sh TSA FineDiving 0,1
 # resume the training process
 bash train.sh TSA FineDiving 0,1 --resume
 
-# test a model on FineDiving
-bash test.sh TSA FineDiving 0,1 --test
+# results
+[TEST] EPOCH: 193, best correlation: 0.920256, best L2: 37.271975, best RL2: 0.003420
+[TEST] EPOCH: 193, best tIoU_5: 0.825100, best tIoU_75: 0.343101
 ```
 
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
