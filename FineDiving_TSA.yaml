@@ -3,7 +3,6 @@ bs_train : 8
 bs_test : 1
 workers : 2
 max_epoch : 200
-#step_per_update: 2
 
 # model
 pretrained_i3d_weight : 'models/model_rgb.pth'
