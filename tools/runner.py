@@ -67,7 +67,6 @@ def train_net(args):
         pred_tious_75 = []
         true_scores = []
         pred_scores = []
-        # num_iter = 0
 
         base_model.train()  
         psnet_model.train()
@@ -88,10 +87,7 @@ def train_net(args):
             label_1_score = data['final_score'].float().reshape(-1, 1).cuda()
             label_2_score = target['final_score'].float().reshape(-1, 1).cuda()
 
-            # # forward
-            # if num_iter == args.step_per_update:
-            #     num_iter = 0
-            #     opti_flag = True
+            # forward
 
             helper.network_forward_train(base_model, psnet_model, decoder, regressor_delta, pred_scores,
                                          video_1, label_1_score, video_2, label_2_score, mse, optimizer,
@@ -131,8 +127,7 @@ def validate(base_model, psnet_model, decoder, regressor_delta, test_dataloader,
 
     print("Start validating epoch {}".format(epoch))
     global use_gpu
-    global epoch_best_aqa, rho_best, L2_min, RL2_min
-    global epoch_best_tas, pred_tious_best_5, pred_tious_best_75
+    global epoch_best_aqa, rho_best, L2_min, RL2_min, epoch_best_tas, pred_tious_best_5, pred_tious_best_75
 
     true_scores = []
     pred_scores = []
