@@ -27,7 +27,7 @@ The annotation information is saved in [`FineDiving_coarse_annotation.pkl`](Anno
 | `start_frame`       | int                         | Start frame of the action instance. | `end_frame`        | int             | End frame of the action instance.|  
 
 ### Statistics
-The FineDiving dataset consists of 3000 video samples, crossed 52 action types, 29 sub-action types, and 23 difficulty degree types.
+The FineDiving dataset consists of 3000 video samples, covering 52 action types, 29 sub-action types, and 23 difficulty degree types.
 
 ### Download
 - Untrimmed_Videos: Diving competition videos in Olympics, World Cup, World Championships, and European Aquatics Championships. [[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg)
