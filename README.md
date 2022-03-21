@@ -98,7 +98,7 @@ bash train.sh TSA FineDiving 0,1
 bash train.sh TSA FineDiving 0,1 --resume
 
 # test a trained model on FineDiving
-
+bash test.sh TSA FineDiving 0,1 ./experiments/TSA/FineDiving/default/last.pth
 ```
 
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
