@@ -94,12 +94,11 @@ FineDiving_TSA.yaml
 # train a model on FineDiving
 bash train.sh TSA FineDiving 0,1
 
-# resume the training process
+# resume the training process on FineDiving
 bash train.sh TSA FineDiving 0,1 --resume
 
-# print the results of TSA (w/DN), for example:
-[TEST] EPOCH: 193, best correlation: 0.920256, best L2: 37.271975, best RL2: 0.003420
-[TEST] EPOCH: 193, best tIoU_5: 0.825100, best tIoU_75: 0.343101
+# test a trained model on FineDiving
+
 ```
 
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
