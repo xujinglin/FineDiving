@@ -99,6 +99,7 @@ bash train.sh TSA FineDiving 0,1 --resume
 
 # test a trained model on FineDiving
 bash test.sh TSA FineDiving 0,1 ./experiments/TSA/FineDiving/default/last.pth
+# last.pth is obtained by train.sh and saved at "experiments/TSA/FineDiving/default/"
 ```
 
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
