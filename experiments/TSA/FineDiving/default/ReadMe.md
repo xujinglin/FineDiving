@@ -1,1 +1,1 @@
-The trained model is released in 
+### The trained model is released in "Releases".
