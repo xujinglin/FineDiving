@@ -52,6 +52,11 @@ pip install git+https://github.com/hassony2/torch_videovision
 - The prepared dataset ([[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) or [[Google Drive]](https://drive.google.com/drive/folders/1KIsocnoL1fSkogljdtOswEljYjFhrtgj?usp=sharing)) and annotations (Annotations/fine-grained_annotation_aqa.pkl) are already provided in this repo. 
 
 - If you want to prepare the data by yourself, please see [data_process](data_preparation/data_process.py) for some helps. We provide codes for processing the data from a video to frames.
+```
+video_dir = "./FINADiving"           # the path to untrimmed videos (.mp4)
+base_dir = "./FINADiving_jpgs"       # the path to untrimmed video frames (.jpgs)
+save_dir = "./FINADiving_jpgs_256"   # the path to resized untrimmed video frames (used in our approach) 
+```
 
 - The data structure should be:
 ```
