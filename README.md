@@ -37,7 +37,7 @@ The FineDiving dataset consists of 3000 video samples, covering 52 action types,
 
 We have made the full dataset available on [[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) (extract number: 0624).
 
-## Code
+## Code for Temporal Segmentation Attention (TSA)
 ### Requirement
 - Python 3.7.9
 - Pytorch 1.7.1
@@ -47,6 +47,12 @@ We have made the full dataset available on [[Baidu Drive]](https://pan.baidu.com
 ```
 pip install git+https://github.com/hassony2/torch_videovision
 ```
+
+### Data Preperation
+The prepared dataset [Trimmed_Video_Frames]([[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) or [[Google Drive]](https://drive.google.com/drive/folders/1KIsocnoL1fSkogljdtOswEljYjFhrtgj?usp=sharing)) and annotations are already provided in this repo. 
+
+If you want to prepare the data by yourself, please see [data_process](data_preparation/data_process.py) for some helps. We provide codes for processing the data from a video to frames.
+
 
 ### The FineDiving Dataset for AQA
 - The data structure should be:
