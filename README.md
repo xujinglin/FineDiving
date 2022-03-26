@@ -49,7 +49,7 @@ pip install git+https://github.com/hassony2/torch_videovision
 ```
 
 ### Data Preperation
-- The prepared dataset ([[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) or [[Google Drive]](https://drive.google.com/drive/folders/1KIsocnoL1fSkogljdtOswEljYjFhrtgj?usp=sharing)) and annotations (Annotations/fine-grained_annotation_aqa.pkl) are already provided in this repo. 
+- The prepared dataset ([[Baidu Drive]](https://pan.baidu.com/s/1v85-np2FbS0J4UfAEiI4mg) (extract number: 0624) or [[Google Drive]](https://drive.google.com/drive/folders/1KIsocnoL1fSkogljdtOswEljYjFhrtgj?usp=sharing)) and annotations (Annotations/fine-grained_annotation_aqa.pkl) are already provided in this repo. 
 
 - If you want to prepare the data by yourself, please see [data_process](data_preparation/data_process.py) for some helps. We provide codes for processing the data from a video to frames.
 ```
