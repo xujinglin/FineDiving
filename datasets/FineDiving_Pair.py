@@ -67,43 +67,17 @@ class FineDiving_Pair_Dataset(torch.utils.data.Dataset):
     def load_video(self, video_file_name):
         image_list = sorted((glob.glob(os.path.join(self.data_root, video_file_name[0], str(video_file_name[1]), '*.jpg'))))
 
-        if len(image_list) >= self.length:
-            start_frame = int(image_list[0].split("/")[-1][:-4])
-            end_frame = int(image_list[-1].split("/")[-1][:-4])
-            frame_list = np.linspace(start_frame, end_frame, self.length).astype(np.int)
-            image_frame_idx = [frame_list[i] - start_frame for i in range(self.length)]
+        start_frame = int(image_list[0].split("/")[-1][:-4])
+        end_frame = int(image_list[-1].split("/")[-1][:-4])
+        frame_list = np.linspace(start_frame, end_frame, self.length).astype(np.int)
+        image_frame_idx = [frame_list[i] - start_frame for i in range(self.length)]
 
-            video = [Image.open(image_list[image_frame_idx[i]]) for i in range(self.length)]
-            frames_labels = [self.data_anno.get(video_file_name)[4][i] for i in image_frame_idx]
-            frames_catogeries = list(set(frames_labels))
-            frames_catogeries.sort(key=frames_labels.index)
-            transitions = [frames_labels.index(c) for c in frames_catogeries]
-            return self.transforms(video), np.array([transitions[1]-1,transitions[-1]-1]), np.array(frames_labels)
-        else:
-            video = [Image.open(image_list[i]) for i in range(len(image_list))]
-            video_1 = self.transforms(video)
-            C, T, H, W = video_1.size()
-            video_1 = video_1.unsqueeze(-1).expand(C, T, H, W, 2)
-            video_1 = video_1.reshape(C, -1, H, W)
-            C1, T1, H1, W1 = video_1.size()
-
-            frame_labels_1 = self.data_anno.get(video_file_name)[4]
-            TT = frame_labels_1.shape[0]
-            frame_labels_1 = torch.from_numpy(frame_labels_1).unsqueeze(-1).expand(T, 2)
-            frame_labels_1 = frame_labels_1.reshape(-1)
-            TT1 = frame_labels_1.shape[0]
-            frame_labels_1 = frame_labels_1.tolist()
-
-            assert T1 == TT1 and T == TT
-            select_space = np.linspace(0, TT1 - 1, self.length).astype(np.int)
-            select_frame_list = [select_space[i] for i in range(self.length)]
-
-            video_1 = torch.cat([video_1[:, ii, :, :].unsqueeze(1) for ii in select_frame_list], 1)
-            frame_labels_1 = [frame_labels_1[ii] for ii in select_frame_list]
-            frames_catogeries = list(set(frame_labels_1))
-            frames_catogeries.sort(key=frame_labels_1.index)
-            transitions = [frame_labels_1.index(c) for c in frames_catogeries]
-            return video_1, np.array([transitions[1]-1,transitions[-1]-1]), np.array(frame_labels_1)
+        video = [Image.open(image_list[image_frame_idx[i]]) for i in range(self.length)]
+        frames_labels = [self.data_anno.get(video_file_name)[4][i] for i in image_frame_idx]
+        frames_catogeries = list(set(frames_labels))
+        frames_catogeries.sort(key=frames_labels.index)
+        transitions = [frames_labels.index(c) for c in frames_catogeries]
+        return self.transforms(video), np.array([transitions[1]-1,transitions[-1]-1]), np.array(frames_labels)
 
 
     def read_pickle(self, pickle_path):
