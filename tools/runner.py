@@ -13,7 +13,7 @@ def train_net(args):
     # build dataset
     train_dataset, test_dataset = builder.dataset_builder(args)
     train_dataloader = torch.utils.data.DataLoader(train_dataset, batch_size=args.bs_train,
-                                            shuffle=False, num_workers=int(args.workers),
+                                            shuffle=True, num_workers=int(args.workers),
                                             pin_memory=True, worker_init_fn=misc.worker_init_fn)
     test_dataloader = torch.utils.data.DataLoader(test_dataset, batch_size=args.bs_test,
                                                   shuffle=False, num_workers=int(args.workers),
