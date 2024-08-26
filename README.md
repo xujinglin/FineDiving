@@ -121,4 +121,8 @@ bash test.sh TSA FineDiving 0,1 ./experiments/TSA/FineDiving/default/last.pth
 # last.pth is obtained by train.sh and saved at "experiments/TSA/FineDiving/default/"
 ```
 
+## Code for Spatial-Temporal Segmentation Attention (STSA)
+
+Coming soon...
+
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
