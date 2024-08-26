@@ -125,4 +125,19 @@ bash test.sh TSA FineDiving 0,1 ./experiments/TSA/FineDiving/default/last.pth
 
 Coming soon...
 
+
+## Reference
+
+```
+@inproceedings{xu2022finediving,
+  title={Finediving: A fine-grained dataset for procedure-aware action quality assessment},
+  author={Xu, Jinglin and Rao, Yongming and Yu, Xumin and Chen, Guangyi and Zhou, Jie and Lu, Jiwen},
+  booktitle={CVPR},
+  pages={2949--2958},
+  year={2022}
+}
+```
+
+
+
 **Contact:** [xujinglinlove@gmail.com](mailto:xujinglinlove@gmail.com)
